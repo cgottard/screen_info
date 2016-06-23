@@ -5,7 +5,6 @@
         <meta charset="utf-8">
 
         <title>PI Info Screen</title>
-
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
@@ -24,7 +23,7 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/live.js#html"></script>
         
-        <!-- weather -->
+        <!-- weather 
         <link rel="stylesheet" href="css/weather.css">
         <script src="js/jquery.simpleWeather.min.js"></script>
         <script>
@@ -64,12 +63,12 @@
               });
             });
             </script>
-
+    -->
     </head>
 
     <body>
         
-        <!-- Template -->
+        <!-- Template
         <div style="position:fixed;bottom:0;left:50%;margin-left:-300px; /*negative half the width */ width:600px;height:110px; "><b></b>
             <img style="margin:5px;" src="css/BMBF.jpg"/><img style="margin:5px;" src="css/ATLAS101.jpg"/><img style="margin:5px;" src="css/PHTH.jpg"/><img style="margin:5px;" src="css/dfg_logo.gif"/>
         </div>
@@ -81,7 +80,7 @@
         <div style="position:fixed;top:1%;left:1%;"><b></b>
             <img style="margin:5px;" src="css/logoPi.png"/>
         </div>
-        
+        -->
         
         <div class="reveal">
             
@@ -90,76 +89,48 @@
             <!-- #################################################################### -->
             <div class="slides">
                 
-                
+                <!--
                 <section>
                     <h2>Our Group</h2>
                     <img class="stretch" src="slides/GroupPicutre.jpeg" />
                 </section>
+				
                 
-                <!--
-                <section data-autoslide="10000">
-                     <iframe class="stretch" src="https://web.physik.uni-bonn.de/events/intranet/events.php" ></iframe>
-                </section>
-				-->
-		
-                
-                <section data-autoslide="16000">
-                     <h2>ATLAS Collision Events</h2>
-                     <iframe class="stretch" src="http://atlas-live.cern.ch/" ></iframe>
-                </section>
-
                 <section>
                     <h2>Weather in Bonn</h2>
                     <div id="weather"> </div>
                     <div id="forcast"> </div>
                 </section>
-                
-                <section data-autoslide="16000">
-                     <h2>ATLAS Collision Events</h2>
-                     <iframe class="stretch" src="http://atlas-live.cern.ch/" ></iframe>
-                </section>
+                -->
 
+                <section data-autoslide="16000">
                 
                 <section>
-                     <h2>LHC Status</h2>
-                    <img class="stretch" src="http://vistar-capture.web.cern.ch/vistar-capture/lhc3.png" >
+                <h2> Upcoming Events</h2>
+                <iframe class="zoom" src="https://web.physik.uni-bonn.de/events/short_events.php?lang=en"></iframe>
                 </section> 
-                       
-                <!--
-                <section>
-                    <h2>Picture of the Quarter</h2>
-                    <p  align="justify">
-                    <img style="border-color: white; margin: 10px" align="left" src="http://www.pi.uni-bonn.de/news/picture-of-the-quarter/2.-quartal-2014-depfet-matrix/image"/>
-                    The first large, thin, multi-chip DEPFET (DEpleted P-channel Field Effect Transistor) detector arrived in Bonn for further optimization and characterization. The sensor consists of roughly 92 thousand DEPFET pixels arranged in 192 columns and 480 rows with a pitch of 50 x 75 um, resulting in a total sensitive area of 36.0 x 9.6 mm.
-                    <br/>
-                    All the necessary processing chips for row-selection, digitization and zero-suppression are directly mounted on the all-silicon module, surrounding the 50 um thin active volume.For scale comparison, in the picture there is a one Euro-Cent coin next to the detector prototype.
-                    <br/>
-                    The DEPFET technology will be used for the two innermost layers of the Belle II vertex detector in the new Japanese super flavour factory, and besides having numerous applications in non high energy physics experiments, due to its outstanding properties it is also a solid candidate for the pixel detector of the future International Linear Collider.
-                    </p>
+<!--
+                <section> 
+                <h2>Weekly Meetings</h2>
+                     <iframe class="stretch" align="center" src="slides/events.html" ></iframe>
                 </section>
-                -->
-                
-                <section data-autoslide="16000">
-                     <h2>ATLAS Collision Events</h2>
+-->
+                <section>
+                <!--     <h2>ATLAS Collision Events</h2> -->
                      <iframe class="stretch" src="http://atlas-live.cern.ch/" ></iframe>
                 </section>
 
-                <!--
                 <section>
-                     <h2>ATLAS Tracker</h2>
-                     <img class="stretch" src="slides/ATLAS_TR.jpg" />
-                </section>
-                -->
+                 <!--    <h2>LHC Status</h2> -->
+                    <img class="stretch" src="http://vistar-capture.web.cern.ch/vistar-capture/lhc1.png" >
+                </section> 
                 
                 <section>
-                     <h2>DEPFET Module</h2>
-                     <img class="stretch" src="http://asag.physik.uni-bonn.de/~michael/stuff/desy_tb-13.01.2014/pxd_matrix.png" />
-                </section>
+                 <!--    <h2>LHC Status</h2> -->
+                    <img class="stretch" src="http://vistar-capture.web.cern.ch/vistar-capture/lhc3.png" >
+                </section>                       
                 
-                <section data-autoslide="16000">
-                     <h2>ATLAS Collision Events</h2>
-                     <iframe class="stretch" src="http://atlas-live.cern.ch/" ></iframe>
-                </section>
+
                <!--
                 <section>
                      <h2>Installation of the DEPFET Matrix</h2>
@@ -176,10 +147,6 @@
                 </section>
                 -->
                 
-                <section data-autoslide="16000">
-                     <h2>Bonn-Cologne Graduate School</h2>
-                     <iframe class="stretch" src="http://www.gradschool.physics.uni-bonn.de/" ></iframe>
-                </section>
                 
             <!--  do not show animated events when we are taking real events    
 
@@ -227,14 +194,14 @@
             // https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({
                 controls: false,
-                progress: true,
+                progress: false,
                 history: true,
                 center: true,
                 autoSlide : 8000,
                 loop: true,
                 autoSlideStoppable: false,
                 
-				width: 1440,
+				width: 1920, //1440,
 				height: 1080,
 	
                 theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
